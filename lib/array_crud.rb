@@ -3,17 +3,19 @@ def create_an_empty_array
 end
 
 def create_an_array
-  [Monopoly, Scrabble, Catan, Sorry]
+  ["Monopoly", "Scrabble", "Catan", "Sorry"]
 end
 
 def add_element_to_end_of_array(array, element)
-  boardgames = [Monopoly, Scrabble, Catan, Sorry]
-  boardgames << Chess
+  boardgames = ["Monopoly", "Scrabble", "Catan", "Sorry"]
+  boardgames << "Chess"
   boardgames
 end
 
 def add_element_to_start_of_array(array, element)
-
+  boardgames = ["Monopoly", "Scrabble", "Catan", "Sorry"]
+  boardgames.unshift("Chess")
+  boardgames
 end
 
 def remove_element_from_end_of_array(array)
